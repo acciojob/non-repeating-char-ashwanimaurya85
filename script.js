@@ -18,15 +18,11 @@ function firstNonRepeatedChar(str) {
     }
   }
 
-  // If no non-repeated character is found, return null or a message indicating that
+  // If no non-repeated character is found, return null
   return null;
 }
 
-const input = prompt("Enter a string");
+// Test the function with an example string
+const input = "aabbccddeeffg";
 const result = firstNonRepeatedChar(input);
-
-if (result) {
-  alert("The first non-repeated character is: " + result);
-} else {
-  alert("No non-repeated character found in the input string.");
-}
+console.log(`The first non-repeated character is: ${result}`);
