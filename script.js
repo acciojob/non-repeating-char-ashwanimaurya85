@@ -11,7 +11,7 @@ function firstNonRepeatedChar(str) {
     }
   }
 
-  // Iterate through the string again to find the first non-repeated character
+  // Iterate through the string to find the first non-repeated character
   for (const char of str) {
     if (charCount[char] === 1) {
       return char;
@@ -22,7 +22,5 @@ function firstNonRepeatedChar(str) {
   return null;
 }
 
-// Test the function with an example string
-const input = "aabbccddeeffg";
-const result = firstNonRepeatedChar(input);
-console.log(`The first non-repeated character is: ${result}`);
+const input = prompt("Enter a string");
+alert(firstNonRepeatedChar(input));
